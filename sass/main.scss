@@ -1,0 +1,425 @@
+@use './colors' as colors;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-padding-top: 165.97px;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	padding-top: 50px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.underline {
+	margin: 0 auto;
+	width: 100px;
+	height: 4px;
+	background-color: colors.$main-green;
+	margin-bottom: 100px;
+}
+
+nav {
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 1;
+	transition: background-color 0.6s;
+
+	.menu-icon {
+		color: colors.$main-green;
+		font-size: 40px;
+		padding: 10px;
+		border: none;
+	}
+
+	.navbar-brand {
+		padding: 30px;
+		color: colors.$main-green;
+		font-size: 60px;
+		cursor: default;
+	}
+
+	.nav-link {
+		font-size: 24px;
+		margin-left: 20px;
+		color: colors.$main-green;
+	}
+
+	.nav-link:hover {
+		color: colors.$font-hover-color;
+	}
+
+	.active {
+		color: colors.$header-font-color;
+	}
+}
+
+header {
+	color: colors.$header-font-color;
+
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url(../img/hero-small.jpg);
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+		z-index: -10;
+	}
+
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		text-align: center;
+		padding: 10px;
+		z-index: 5;
+
+		h1 {
+			text-transform: uppercase;
+			font-size: 100px;
+		}
+
+		p {
+			text-transform: uppercase;
+			font-size: 50px;
+		}
+	}
+
+	.dot-header {
+		font-size: 10px;
+	}
+
+	.btn-about-us {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		padding: 10px;
+		min-width: 250px;
+		height: 70px;
+		font-size: 24px;
+		text-transform: uppercase;
+		text-decoration: none;
+		background-color: colors.$main-green;
+		color: colors.$button-font-color;
+		transition: background-color 0.3s, color 0.3s;
+	}
+
+	.btn-about-us:hover {
+		background-color: colors.$font-hover-color;
+		color: colors.$button-font-color-hover;
+	}
+}
+
+.about-us {
+	.about-us-card {
+		// transition: color 0.3s;
+		margin-bottom: 100px;
+	}
+
+	.about-us-card:hover {
+		color: colors.$font-hover-color;
+	}
+
+	i {
+		font-size: 30px;
+	}
+
+	.about-us-card-title {
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.about-us-card-text {
+		font-size: 22px;
+	}
+}
+
+.about-us-second-part {
+	.about-us-img {
+		position: relative;
+		background-image: url(../img/about-us-small.jpg);
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+
+	.about-us-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.9);
+		z-index: -10;
+	}
+
+	.about-us-text {
+		color: colors.$header-font-color;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		text-align: center;
+		padding: 10px;
+		z-index: 5;
+	}
+}
+
+.offer {
+	.card-body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.underline {
+			margin-bottom: 20px;
+		}
+
+		.card-title {
+			text-transform: uppercase;
+		}
+	}
+	.carousel-item {
+		position: relative;
+		height: 600px;
+	}
+
+	.carousel-caption {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 40px 0;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.carousel-indicators {
+		padding-bottom: 20px;
+	}
+
+	.p-offer {
+		font-size: 24px;
+	}
+
+	.carousel-flex-container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.underline {
+			margin-bottom: 50px;
+		}
+
+		.h1-carousel-item {
+			text-transform: uppercase;
+			color: colors.$header-font-color;
+		}
+
+		.p-carousel-item {
+			color: colors.$header-font-color;
+		}
+	}
+}
+
+.pricing {
+	.underline {
+		margin-bottom: 50px;
+	}
+
+	.h3-pricing {
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 35px;
+	}
+
+	.price-box {
+		// transition: color 0.3s;
+	}
+
+	.price-box:hover {
+		color: colors.$font-hover-color;
+	}
+
+	.price-info {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		a {
+			text-decoration: none;
+			color: colors.$font-hover-color;
+		}
+	}
+}
+
+.contact {
+	position: relative;
+	background-image: url('/img/contact_small_2.jpg');
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+
+	.underline {
+		margin-bottom: 70px;
+	}
+
+	.contact-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.9);
+		z-index: -10;
+	}
+
+	.contact-text {
+		color: colors.$header-font-color;
+		padding-bottom: 70px;
+		z-index: 1;
+
+		.contact-item {
+			h3 {
+				text-transform: uppercase;
+				margin-bottom: 20px;
+				letter-spacing: 2px;
+			}
+		}
+
+		.contact-icons {
+			margin-right: 10px;
+		}
+	}
+}
+
+footer {
+	margin-top: 50px;
+
+	.achievments {
+		margin-bottom: 50px;
+	}
+	i {
+		padding: 10px;
+		font-size: 48px;
+	}
+
+	.achievement-number {
+		font-size: 25px;
+	}
+
+	.achievement-text {
+		font-size: 20px;
+	}
+
+	.social-media {
+		a {
+			.footer-icon {
+				margin: 0 25px 25px 25px;
+				color: colors.$font-hover-color;
+				transition: color 0.3s;
+			}
+
+			.footer-icon:hover {
+				color: colors.$main-green;
+			}
+		}
+	}
+}
+
+@media (min-width: 600px) {
+	header {
+		.hero-img {
+			background-image: url(../img/hero-big.jpg);
+		}
+	}
+
+	.about-us-second-part {
+		.about-us-img {
+			background-image: url(../img/about-us-big.jpg);
+		}
+	}
+}
+
+@media (min-width: 990px) {
+	nav {
+		.nav-link {
+			font-size: 20px;
+		}
+	}
+
+	.offer {
+		.h1-carousel-item {
+			font-size: 36px;
+		}
+
+		.p-carousel-item {
+			font-size: 20px;
+		}
+	}
+
+	.contact {
+		background-image: url('/img/contact_big_2.jpg');
+	}
+}
+
+@media (min-width: 1200px) {
+	nav {
+		.nav-link {
+			font-size: 24px;
+		}
+	}
+
+	.offer {
+		.carousel-flex-container {
+			.h1-carousel-item {
+				font-size: 36px;
+				color: colors.$header-font-color;
+			}
+
+			.p-carousel-item {
+				font-size: 25px;
+			}
+
+			.underline {
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	.contact {
+		p {
+			font-size: 20px;
+		}
+	}
+}

@@ -1,0 +1,337 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 165.97px;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.underline {
+  margin: 0 auto;
+  width: 100px;
+  height: 4px;
+  background-color: #63e6be;
+  margin-bottom: 100px;
+}
+
+nav {
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 1;
+  transition: background-color 0.6s;
+}
+nav .menu-icon {
+  color: #63e6be;
+  font-size: 40px;
+  padding: 10px;
+  border: none;
+}
+nav .navbar-brand {
+  padding: 30px;
+  color: #63e6be;
+  font-size: 60px;
+  cursor: default;
+}
+nav .nav-link {
+  font-size: 24px;
+  margin-left: 20px;
+  color: #63e6be;
+}
+nav .nav-link:hover {
+  color: #087f5b;
+}
+nav .active {
+  color: #ced4da;
+}
+
+header {
+  color: #ced4da;
+}
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/hero-small.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -10;
+}
+header .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+  z-index: 5;
+}
+header .hero-text h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+}
+header .hero-text p {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+header .dot-header {
+  font-size: 10px;
+}
+header .btn-about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px;
+  min-width: 250px;
+  height: 70px;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #63e6be;
+  color: #495057;
+  transition: background-color 0.3s, color 0.3s;
+}
+header .btn-about-us:hover {
+  background-color: #087f5b;
+  color: #212529;
+}
+
+.about-us .about-us-card {
+  margin-bottom: 100px;
+}
+.about-us .about-us-card:hover {
+  color: #087f5b;
+}
+.about-us i {
+  font-size: 30px;
+}
+.about-us .about-us-card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.about-us .about-us-card-text {
+  font-size: 22px;
+}
+
+.about-us-second-part .about-us-img {
+  position: relative;
+  background-image: url(../img/about-us-small.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.about-us-second-part .about-us-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -10;
+}
+.about-us-second-part .about-us-text {
+  color: #ced4da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+  z-index: 5;
+}
+
+.offer .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.offer .card-body .underline {
+  margin-bottom: 20px;
+}
+.offer .card-body .card-title {
+  text-transform: uppercase;
+}
+.offer .carousel-item {
+  position: relative;
+  height: 600px;
+}
+.offer .carousel-caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.offer .carousel-indicators {
+  padding-bottom: 20px;
+}
+.offer .p-offer {
+  font-size: 24px;
+}
+.offer .carousel-flex-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.offer .carousel-flex-container .underline {
+  margin-bottom: 50px;
+}
+.offer .carousel-flex-container .h1-carousel-item {
+  text-transform: uppercase;
+  color: #ced4da;
+}
+.offer .carousel-flex-container .p-carousel-item {
+  color: #ced4da;
+}
+
+.pricing .underline {
+  margin-bottom: 50px;
+}
+.pricing .h3-pricing {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+.pricing .price-box:hover {
+  color: #087f5b;
+}
+.pricing .price-info {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.pricing .price-info a {
+  text-decoration: none;
+  color: #087f5b;
+}
+
+.contact {
+  position: relative;
+  background-image: url("/img/contact_small_2.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.contact .underline {
+  margin-bottom: 70px;
+}
+.contact .contact-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -10;
+}
+.contact .contact-text {
+  color: #ced4da;
+  padding-bottom: 70px;
+  z-index: 1;
+}
+.contact .contact-text .contact-item h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.contact .contact-text .contact-icons {
+  margin-right: 10px;
+}
+
+footer {
+  margin-top: 50px;
+}
+footer .achievments {
+  margin-bottom: 50px;
+}
+footer i {
+  padding: 10px;
+  font-size: 48px;
+}
+footer .achievement-number {
+  font-size: 25px;
+}
+footer .achievement-text {
+  font-size: 20px;
+}
+footer .social-media a .footer-icon {
+  margin: 0 25px 25px 25px;
+  color: #087f5b;
+  transition: color 0.3s;
+}
+footer .social-media a .footer-icon:hover {
+  color: #63e6be;
+}
+
+@media (min-width: 600px) {
+  header .hero-img {
+    background-image: url(../img/hero-big.jpg);
+  }
+  .about-us-second-part .about-us-img {
+    background-image: url(../img/about-us-big.jpg);
+  }
+}
+@media (min-width: 990px) {
+  nav .nav-link {
+    font-size: 20px;
+  }
+  .offer .h1-carousel-item {
+    font-size: 36px;
+  }
+  .offer .p-carousel-item {
+    font-size: 20px;
+  }
+  .contact {
+    background-image: url("/img/contact_big_2.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  nav .nav-link {
+    font-size: 24px;
+  }
+  .offer .carousel-flex-container .h1-carousel-item {
+    font-size: 36px;
+    color: #ced4da;
+  }
+  .offer .carousel-flex-container .p-carousel-item {
+    font-size: 25px;
+  }
+  .offer .carousel-flex-container .underline {
+    margin-bottom: 50px;
+  }
+  .contact p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/288c8cccc3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/calculator.css" />
+  <title>Price calculator</title>
+</head>
+
+<body>
+  <section class="main">
+    <div class="calculator-box">
+      <div class="header-calculator-box">
+        <p class="paragraph-header-calculator-box">
+          Kalkulator cennika usług ksiegowych - 2022
+        </p>
+      </div>
+      <div class="body-calculator-box">
+        <div class="body-calculator-wraper">
+          <label for="number-of-documents">Szacunkowa liczba dokumentów księgowych:</label>
+          <input id="number-of-documents" type="number" min="1" max="5000" class="number-of-documents" />
+        </div>
+        <div class="div-warrning">
+          <p class="paragraph-warrning">Wpisz liczbę dokumentów księgowych</p>
+        </div>
+
+        <div class="body-calculator-wraper">
+          <label for="accounting-type">Forma prowadzenia księgowości:</label>
+          <select id="accounting-type" type="number" class="select-accounting-form">
+            <option disabled selected value>-- Wybierz opcję --</option>
+            <option value="KPiR">Książka przychodów i rozchodów</option>
+            <option value="lump-sum-on-revenues">
+              Ryczałt od przychodów ewidencjonowanych
+            </option>
+            <option value="full-accounting">Pełna księgowość</option>
+          </select>
+        </div>
+        <div class="div-warrning">
+          <p class="paragraph-warrning">Musisz wybrać jakąś opcję</p>
+        </div>
+
+        <div class="body-calculator-wraper">
+          <label for="number-of-employees">Liczba osób na umowę o pracę:</label>
+          <input id="number-of-employees" type="number" min="0" max="999" class="number-of-employees" />
+        </div>
+
+        <div class="body-calculator-wraper">
+          <label for="number-of-civil-contracts">Liczba osób na umowach cywilnoprawnych:</label>
+          <input id="number-of-civil-contracts" type="number" min="0" max="999" class="number-of-civil-contracts" />
+        </div>
+
+        <div class="body-calculator-wraper">
+          <label for="VAT">Czy firma jest podatnikiem VAT:</label>
+          <input id="number-of-documents" type="checkbox" class="checkbox checkbox-VAT" />
+        </div>
+
+        <div class="body-calculator-wraper">
+          <label for="VAT">Czy firma jest podatnikiem UE:</label>
+          <input id="number-of-documents" type="checkbox" class="checkbox checkbox-VAT-UE" />
+        </div>
+
+        <div class="body-calculator-wraper">
+          <div class="buttons">
+            <button class="count-btn">Wylicz</button>
+            <button class="clear-btn">Wyczyść</button>
+          </div>
+          <p class="paragraph-price">
+            Cena od: <strong><span class="span-price"></span> zł</strong> netto
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./js/calculator_testy.js"></script>
+</body>
+
+</html>
