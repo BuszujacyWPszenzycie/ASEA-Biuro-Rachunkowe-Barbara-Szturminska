@@ -1,5 +1,7 @@
-AOS.init({
-	startEvent: 'DOMContentLoaded',
+$(function() {
+          AOS.init(
+		  startEvent: 'DOMContentLoaded',
 	offset: 200,
 	once: true,
-})
+	  );
+     });
